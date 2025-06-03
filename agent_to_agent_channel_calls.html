@@ -1,0 +1,47 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2A router</title>
+</head>
+
+<body>
+    <h3>Agent to agent communication network</h3>
+    <p>Create channel by describing route, along with each step's params</p>
+    <p>Agent ID. KB address (temple's, guild's, player's ...)</p>
+    <h3>Try this chain:</h3>
+    <p><input type="text" name="" id="" placeholder="via"></p>
+    <button>Send_message_to</button>
+    <div>
+        <h3>chain builder</h3>
+        <p>
+            a to b, b to a (optional. could be one way).
+        </p>
+        <p>channel can be made of sequence of one way channels, agents can have multiple channels between em, like,</p>
+        <p>bluetooth, wifi, another app, http, through server 1, through server 2</p>
+
+    </div>
+    <script>
+        class Agent {
+            KBID;
+            channels;
+            Agent(KBID) {
+                this.KBID = KBID;
+            }
+
+        }
+        var agent = new Agent("temple.guild1.player7.agent7")
+        // agent.channels[7]  ??
+        class Channel {
+            channel_to;//agent_ID
+            channel_from;//agent_ID
+            protocol;//can be temple.kb1.value1 ??
+            param_vector_address
+            param_vector_values
+
+        }
+    </script>
+</body>
+
+</html>
